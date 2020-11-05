@@ -1,0 +1,30 @@
+.account-info{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/welcome.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+table tr{
+    line-height: 60px;
+}
+
+tr{
+    background-color: black;
+}
+tr:hover {background-color: #121111;}
+table{
+   float: right;
+    padding-right: 80px;
+    padding-top: 100px;
+}
+td,th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+th{
+    color: #e67e22;
+}
+td{
+    color: white;
+}
+

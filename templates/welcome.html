@@ -1,0 +1,53 @@
+{% extends 'basic.html' %}
+{%block head%}
+  <link rel="stylesheet" href="../static/css/welcome.css">
+{%endblock%}
+
+{%block pay%}
+    <form action="{{url_for('payment')}}" method="POST" class='payment'>
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key={{public_key}}
+      data-amount="99900"
+      data-name="Payment"
+      data-description="Plans Payment"
+      data-image="../static/images/brand.png"
+      data-locale="auto"
+      data-zip-code="true">
+    </script>
+  </form>
+{%endblock%}
+
+{%block content%}
+<section class="account-info">
+    
+    <div class="box">
+        <table >
+            <tr>
+                <td>Name</td>
+                <th>{{name}}</th>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <th>{{mobile}}</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <th>{{email}}</th>
+            </tr>
+            <tr>
+                <td>Plan</td>
+                <th>{{plan_name}}</th>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <th>{{status}}</th>
+            </tr>
+            <tr>
+                <td>Expiry</td>
+                <th>{{expiry}}</th>
+            </tr>
+        </table>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,39 @@
+{% extends 'basic.html' %}
+{%block head%}
+  <link rel="stylesheet" href="../static/css/complaint.css">
+{%endblock%}
+{%block content%}
+<script type="text/javascript">
+  function myfun(){
+      alert("Complaint is registered, Our officials will contact shortly! ");  
+  }
+</script>
+<section class="account-info">
+    <form action="{{url_for('complaint')}}" class="complaint-form" method="post">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">Subject</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="msg">Message</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Message" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="submit" value="Submit" onclick="myfun()">
+                </div>
+              </div>
+    </form>
+</section>
+{%endblock%}

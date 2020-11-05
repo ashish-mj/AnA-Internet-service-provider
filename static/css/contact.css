@@ -1,0 +1,53 @@
+.contact-us{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+.contact-us .head h1{
+    text-align: center;
+    color:black;
+    font-size: 250%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom:  2px solid #e67e22;
+}
+.contact-us .head{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 1px;
+}
+.col ul{
+    list-style: none;
+}
+.ion-small{
+    color: #e67e22;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.box .row .col ul li{
+    display: inline-block;
+    padding-right: 50px;
+}
+.contact-us .box .row{
+    padding-left: 100px;
+}
+
+/*****************contact form*****************/
+.contact-form{
+    padding-top: 40px;
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+*:focus{outline: none;}

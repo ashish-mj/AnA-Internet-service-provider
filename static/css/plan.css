@@ -1,0 +1,52 @@
+.section-plans{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+.plan-box{
+    background-color: #fff;
+    border-radius : 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 10px 0;
+}
+.ion-small{
+    color: #e67e22;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.section-plans .row{
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.section-plans .box{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 1px;
+}
+.section-plans .box h1{
+    text-align: center;
+    color:black;
+    font-size: 250%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:  2px solid #e67e22;
+}

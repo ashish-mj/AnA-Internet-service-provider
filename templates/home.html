@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A&ampA</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="icon" href="../static/images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <nav class="row">
+            <img src="../static/images/brand.png" alt="A&A  logo" class="logo">
+            <ul class="main-nav">
+                <li>
+                    <a href="{{url_for('careers')}}">Careers</a>
+                </li>
+                <li>
+                    <a href="{{url_for('contact')}}">Contact</a>
+                </li>
+                <li>
+                    <a href="{{url_for('login')}}">Login</a>
+                </li>
+                <li>
+                    <a href="{{url_for('plans_info')}}">Plans</a>
+                </li>
+                <li>
+                    <a href="{{url_for('about')}}">About</a>
+                </li>
+                <li>
+                    <a href="{{url_for('home')}}">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Fastest Network.
+                <br>We have more than 1000 Customers.</h1>
+            <a class="btn btn-full" href="{{url_for('login')}}">Login</a>
+            <a class="btn btn-full" href="{{url_for('contact')}}">New User?</a>
+        </div>
+    </header>    
+    <footer class="footer-section">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li >
+                        <a href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('about')}}">About</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('plans_info')}}">Plans</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('login')}}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('contact')}}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('careers')}}">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2 ">
+                <ul class="social-links">
+                    <li>
+                        <a href="#"><i class="ion-social-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ion-social-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p class="footer-copy-text">2020 &copy; A&ampA. All rights reserved<br>Akshay Kumar Dhage and Ashish MJ</p>
+        </div>
+        
+    </footer>
+    
+</body>    
+    
+</html>

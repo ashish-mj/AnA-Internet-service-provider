@@ -1,0 +1,42 @@
+.login-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)),url(../images/portal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    
+}
+.login-form{
+    padding-left: 30px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+button {   
+       background-color: #e67e22;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 20px 0px;   
+        border: none;   
+        cursor: pointer; 
+        border-radius: 200px;
+        display: block;
+         }   
+   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: block;     
+        border-radius: 3px;
+       border: 1px solid #ccc;  
+    }
+ button:hover {   
+        background-color: #c16d17;
+    }   
+  
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: white;  
+    } 

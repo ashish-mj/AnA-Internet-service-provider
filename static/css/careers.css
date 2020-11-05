@@ -1,0 +1,24 @@
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.job{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/work.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.box{
+    padding: 50px 200px 50px 200px;
+}
+.box h1{
+    text-align: center;
+    color:white;
+    font-size: 250%;
+    padding-bottom: 20px;
+    border-bottom:  2px solid #e67e22;
+}
+.box p{
+    color:white;
+    line-height: 30px;
+}

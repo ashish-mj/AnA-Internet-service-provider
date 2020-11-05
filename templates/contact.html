@@ -1,0 +1,84 @@
+{% extends 'template.html'%}
+{%block head%}
+  <link rel="stylesheet" href="../static/css/contact.css">
+{%endblock%}
+
+{%block content%}
+<script type="text/javascript">
+  function myfun(){
+      alert("Thank you, Our officials will contact shortly! ");  
+  }
+</script>
+<section class="contact-us">
+    <div class="head">
+        <h1>Reach Out Us</h1>
+    </div>
+    <div class="box">
+         <div class="row">
+             <div class="col">
+                 <ul>
+                    <li>
+                    <i class="ion-android-call ion-small"></i>0821-2222222</li>
+                    <li>
+                    <i class="ion-social-whatsapp ion-small"></i>9999999999</li>
+                    <li>
+                    <i class="ion-email ion-small"></i>sales@ana.com</li>
+                    <li>
+                    <i class="ion-ios-location ion-small"></i>#8 2nd main T Layout,Mysuru-18</li>
+                 </ul>
+             </div>
+        </div>
+        
+        <form action="{{url_for('contact')}}" class="contact-form" method="post">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="mobile">Mobile</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="tel" name="mobile" id="mobile" placeholder="Your Mobile Number" pattern="[6-9][0-9]{9}" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="email" name="email" id="email" placeholder="Your Email ID" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="msg">Message</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-0f-3">
+                    <input type="submit" value="Submit" onclick="myfun()">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{%endblock%}

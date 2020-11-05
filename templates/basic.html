@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A&ampA</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/basic.css">
+    <link rel="icon" href="../static/images/logo.jpg" type="image/jpg">
+    {%block head%}
+    
+    {%endblock%}
+</head>
+  <body>
+    <header>
+        <nav class="row">
+            <i class="ion-person ion-small"></i>{{current_user.username}}
+            
+            <ul class="main-nav">
+                <li>
+                    <a href="{{url_for('logout')}}">Logout</a>
+                </li>
+                <li>
+                      {%block pay%}
+                       
+                      {%endblock%}
+                </li>
+                <li>
+                    <a href="{{url_for('complaint')}}">Complaint</a>
+                </li>
+                <li>
+                    <a href="{{url_for('welcome')}}">Account</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+      {% block content%}
+      
+      
+      {% endblock %}
+    </body>
+</html>

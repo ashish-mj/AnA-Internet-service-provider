@@ -1,0 +1,31 @@
+.complaint-form{
+    padding-top: 125px;
+    width: 60%;
+    margin: 0 auto;
+    color: black;
+}
+input[type=text],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+*:focus{outline: none;}
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+    color: white;
+    background-color: black;
+}
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #c16d17;
+}

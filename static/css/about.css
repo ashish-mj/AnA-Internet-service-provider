@@ -1,0 +1,27 @@
+.features{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/palace.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+.first p{
+    color : white;
+    line-height: 30px;
+}
+.box{
+    padding: 50px 200px 200px 200px;
+}
+.features .head h1{
+    text-align: center;
+    color:white;
+    font-size: 250%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom:  2px solid #e67e22;
+}
+.features .head{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 1px;
+}
+
